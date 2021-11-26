@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" type="image/png" href="favimg.png"/>
+<link rel="icon" type="image/png" href="favimg.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c7a5399ecc.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+.input:focus {
+box-shadow: 0px 0px 0px 3px rgba(0, 85, 255, 0.4);
+border: 1px solid #0055ff;
+}
+.input {
+ border: 1px solid #b3b3b3;
+}
+</style>
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Roboto', sans-serif;}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height color header */
+.bgcolor {
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-border" id="myNavbar">
+    <a href="index" class="w3-bar-item"><img src="https://cdn.sewellstephens.com/logo.png" style="width: 100%; height: 40px;"></img></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right">
+      <a href="products" class="w3-bar-item w3-button">PRODUCTS</a>
+    </div>
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="w3_open()">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="w3_open()">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="about" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="products" class="w3-bar-item w3-button">PRODUCTS</a>
+  <a href="contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="https://sewellstephens.makeros.com/login" class="w3-bar-item w3-button">PORTAL</a>
+</nav>
+
+
+
+	  
+	  
+
+
+<!-- Contact Section -->
+<div class="w3-container" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Send us a message:</p>
+  <div style="margin-top:48px">
+    <p class="w3-center">Email: <a href="mailto:info@sewellstephens.com">info@sewellstephens.com</a></p>
+    <br>
+    <form action="https://api.sheetmonkey.io/form/swLEqqytsvttAEFddTnpzY" method="POST">
+      <p><input id="input1" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; padding: 10px; width: 100%;" type="text" placeholder="Name" required name="Name"></p>
+      <p><input id="input2" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; padding: 10px; width: 100%;" type="text" placeholder="Email" required name="Email"></p>
+      <p><input id="input3" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; padding: 10px; width: 100%;" type="text" placeholder="Company name" required name="Company name"></p>
+	  <p><select id="input4" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; padding: 10px; width: 100%;" required name="Subject" onchange="getSelectValue()"></p>
+	  <p><option name="Message type" value="Message type" selected disabled>Message type</option></p>
+      <p><option name="Contact" value="Contact">Contact</option></p>
+      <p><option name="Promotional" value="Promotional" id="promote">Promotional</option></p>
+      <p><option name="Billing" value="Billing" id="billing">Billing</option></p>
+      <p><option name="Custom plan" value="Custom plan" id="plan">Custom plan</option></p>
+      <p><option name="Other" value="Other">Other</option></p>
+      <p></select></p>
+      <p><select id="input5" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; padding: 10px; width: 100%;" required name="Regarding"></p>
+      <p><option name="Regarding" value="Regarding" selected disabled>Regarding</option></p>
+      <p><option name="Sewellstephens" value="Sewellstephens">Sewellstephens</option></p>
+      <p><option name="Twayobiz" value="Twayobiz">Twayobiz</option></p>
+      <p><option name="Rototer" value="Rototer">Rototer</option></p>
+      <p><option name="Monkeycord" value="Monkeycord">Monkeycord</option></p>
+      <p></select></p>
+      <p><textarea id="input6" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; padding: 10px; width: 100%;" type="text" placeholder="Message" required name="Message"></textarea></p>
+      <p>
+        <button class="w3-button w3-hover-blue w3-hover-opacity w3-blue" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; transition: all 0.5s;" type="submit">Submit</button>
+      </p>
+    </form>
+    <p class="w3-center" style="font-size: 14px;">Emails sent to sewellstephens104@gmail.com automatically forwarded to info@sewellstephens.com</p>
+  </div>
+</div>
+
+<div class="w3-container" style="padding:128px 16px;" id="makeros">
+  <h1 class="w3-center">Looking to make web development request?</h1>
+  <h2 class="w3-center">Make this request in our client portal found <a href="https://sewellstephens.makeros.com/register">here</a>.</h2>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-blue w3-padding-64">
+  <p>©2021 Sewell Stephens 104</p>
+<p> </p>
+  <p>Find us on:</p>
+  <a href="https://twitter.com/sewell_stephens">Twitter</a>
+  <a href="https://youtube.com/sewellstephens">YouTube</a>
+  <a href="https://facebook.com/sewellstephens104104">Facebook</a>
+  <a href="https://instagram.com/sewell_stephens_software">Instagram</a>
+  <a href="https://linkedin.com/in/sewellstephens104">LinkedIn</a>
+  <a href="https://behance.net/sewellstephens">Behance</a>
+  <a href="https://dribbble.com/sewell_stephens">Dribbble</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

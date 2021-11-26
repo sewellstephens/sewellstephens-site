@@ -10,6 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/c7a5399ecc.js" crossorigin="anonymous"></script>
 
+
+
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Roboto', sans-serif;}
 
@@ -22,12 +25,30 @@ body, html {
 .bgcolor {
   background-position: center;
   background-size: cover;
-  background-color: white;
+  background-color: black;
   min-height: 100%;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
+}
+
+.a-col {
+  display: flex;
+  flex-direction:column;
+  width:20%;
+}
+.productdiv {
+  display:flex;
+  flex-direction : row;
+  justify-content: space-around;
+}
+.caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  margin-bottom: 15px;
 }
 </style>
 <body>
@@ -63,37 +84,30 @@ body, html {
   <a href="https://sewellstephens.makeros.com/login" class="w3-bar-item w3-button">PORTAL</a>
 </nav>
 
-<!-- Header with full-height image -->
-<header class="bgcolor" id="home">
-  <div class="" style="padding:48px">
-    <p> </p>
-    <p> </p>
-    <h1 class="w3-jumbo w3-center">Sewell Stephens - Software that clicks</h1><br>
-    <p class="w3-center"><img src="https://cdn.sewellstephens.com/clicks.png" width="800"></img></p>
-    <p class="w3-center"><iframe src="https://cdn.sewellstephens.com/buttons" width="350" height="100" style="border: none;"></iframe></p>
-    </div> 
-</header>
-
-
-
 <!-- Products Section -->
-<div class="w3-container" style="padding:128px 16px" id="products">
-  <h3 class="w3-center">PRODUCTS</h3>
-  <h2 class="w3-center">View our products on our products page <a href="products">here</a>.</h2>
-</div>
 
-<!-- Meet Section -->
-<div class="w3-container" style="padding:128px 16px" id="meet">
-  <h3 class="w3-center">MEET THE OWNER</h3>
-  <p class="w3-center"><img src="https://cdn.sewellstephens.com/profile-pic.jpg" width="300" height="300" style="-webkit-border-radius: 999px; -moz-border-radius: 999px; border-radius: 999px;"></img></p>
-  <p class="w3-center"><a href="about">Learn more</a> about Sewell Stephens, Single Founder and Owner</p>
-</div>
+<h1> </h1>
+<h1> </h1>
 
-<!-- Wrap up Section -->
-<div class="w3-container" style="padding:128px 16px" id="wrapup">
-<h1 class="w3-center">We build software products for you to love</h1>
-<p class="w3-center"><img src="https://cdn.sewellstephens.com/love-icon.png" width="600"></img></p>
+<h3 class="w3-center">PRODUCTS</h3>
+
+<h3 style="margin-left: 10px;"><i class="fas fa-th"></i> APPS</h3>
+<div class="productdiv">
+<a class="a-col" href="https://rototer.com" target="_blank"><img src="https://cdn.sewellstephens.com/rototer-icon.png" style=" margin-right: 300px;" width="200"></img><p class="caption" style="font-size: 18px;">Rototer</p></a>
+
+<a class="a-col" href="https://twayobiz.com" target="_blank"><img src="https://cdn.sewellstephens.com/twayobiz-icon.png" width="200" style=" margin-right: 300px;"></img><p class="caption" style="font-size: 18px;">Twayobiz</p></a>
+
+<a class="a-col" href="https://monkeycord.at" target="_blank"><img src="https://cdn.sewellstephens.com/monkeycord-icon.png" style="" width="200"></img><p class="caption" style="font-size: 18px;">Monkeycord</p></a>
+
+<a class="a-col" href="https://sheaterbob.ch" target="_blank"><img src="https://cdn.sewellstephens.com/sheaterbob-icon.png" style="margin-right: 300px;" width="200"></img><p class="caption" style="font-size: 18px;">Sheaterbob</p></a>
 </div>
+<h3 style="margin-left: 10px;"><i class="fas fa-hammer"></i> TOOLS</h3>
+
+<p style="margin-left: 10px; font-size: 18px;"><a href="https://toolkit.sewellstephens.com/iframe-generator">Iframe generator</a></p>
+<p style="margin-left: 10px; font-size: 18px;"><a href="https://toolkit.sewellstephens.com/box-shadow-generator">Box shadow generator</a></p>
+<p style="margin-left: 10px; font-size: 18px;"><a href="https://toolkit.sewellstephens.com/redirect-tool">Redirect tool</a></p>
+<p style="margin-left: 10px; font-size: 18px;"><a href="https://toolkit.sewellstephens.com/preloader-tool">Preloader tool</a></p>
+
 
 <span class="w3-jumbo">Want software development? <a href="contact">Contact us</a> today</span>
 
