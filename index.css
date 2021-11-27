@@ -42,3 +42,22 @@ a {
     	50% { color:  #0f0; }
     	99% { color: black; }
 }
+
+input {
+font-family: courier, monospace;
+color: lime;
+background-color: transparent;
+}
+
+select {
+font-family: courier, monospace;
+color: lime;
+background-color: transparent;
+}
+
+button {
+font-family: courier, monospace;
+color: lime;
+background-color: transparent;
+border: none;
+}
