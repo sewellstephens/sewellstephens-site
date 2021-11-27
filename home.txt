@@ -11,5 +11,29 @@ Hey There! This is home for software that clicks.<!-- laglaglaglaglaglaglaglagla
 
 <p>Contact us</p>
 <p><a href="mailto:info@sewellstephens.com">info@sewellstephens.com</a>.</p><!-- delaydelaydelaydelaydelaydelaydelay -->
+<form action="https://api.sheetmonkey.io/form/swLEqqytsvttAEFddTnpzY" method="POST">
+      <p><input id="input1" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; border: none; width: 100%;" type="text" placeholder="Name" required name="Name"></p>
+      <p><input id="input2" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; border: none; width: 100%;" type="text" placeholder="Email" required name="Email"></p>
+      <p><input id="input3" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; border: none; width: 100%;" type="text" placeholder="Company name" required name="Company name"></p>
+	  <p><select id="input4" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; border: none; width: 100%;" required name="Subject" onchange="getSelectValue()"></p>
+	  <p><option name="Message type" value="Message type" selected disabled>Message type</option></p>
+      <p><option name="Contact" value="Contact">Contact</option></p>
+      <p><option name="Promotional" value="Promotional" id="promote">Promotional</option></p>
+      <p><option name="Billing" value="Billing" id="billing">Billing</option></p>
+      <p><option name="Custom plan" value="Custom plan" id="plan">Custom plan</option></p>
+      <p><option name="Other" value="Other">Other</option></p>
+      <p></select></p>
+      <p><select id="input5" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; padding: 10px; width: 100%;" required name="Regarding"></p>
+      <p><option name="Regarding" value="Regarding" selected disabled>Regarding</option></p>
+      <p><option name="Sewellstephens" value="Sewellstephens">Sewellstephens</option></p>
+      <p><option name="Twayobiz" value="Twayobiz">Twayobiz</option></p>
+      <p><option name="Rototer" value="Rototer">Rototer</option></p>
+      <p><option name="Monkeycord" value="Monkeycord">Monkeycord</option></p>
+      <p></select></p>
+      <p><textarea id="input6" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none;  border: none; width: 100%;" type="text" placeholder="Message" required name="Message"></textarea></p>
+      <p>
+        <button class="w3-button w3-hover-blue w3-hover-opacity w3-blue" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; transition: all 0.5s;" type="submit">Submit</button>
+      </p>
+    </form>
 
 
