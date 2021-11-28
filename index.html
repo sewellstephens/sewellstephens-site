@@ -1,39 +1,142 @@
-<!DOCTYPE html>
+P<!DOCTYPE html>
 <html>
 <link rel="shortcut icon" type="image/png" href="sew-icon.png"/>
 <link rel="icon" type="image/png" href="sew-icon.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c7a5399ecc.js" crossorigin="anonymous"></script>
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Roboto', sans-serif;}
 
-body {
-  max-width: 500px;
-  margin: auto;
+body, html {
+  height: 100%;
+  line-height: 1.8;
 }
 
-.mdiv {
-  border: 1px solid black;
-  padding: 10px;
-  margin: 22px;
-  box-shadow: 5px 10px #0ab8f7;
-  height: 350px;
+/* Full height color header */
+.bgcolor {
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+  min-height: 100%;
 }
 
-p,h1,h2,h3,h4,h5 {text-align: center;}
+.w3-bar .w3-button {
+  padding: 16px;
+}
 </style>
 <body>
-<div class="mdiv"> 
 
-<p><img src="https://cdn.sewellstephens.com/logo.png" width="200"></img></p>
-<p><h3><strong>Software that clicks</strong></h3></p>
-<p>Sewell Stephens software is committed to bringing you high quality software that clicks. Sewell Stephens software was built by a young autistic entrepreneur that loves building software. If you don't like our software you can unsubscribe to our premium plan(s) anytime, guaranteed. This evolves around a good user experience that you will never miss.</p>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-border" id="myNavbar">
+    <a href="index" class="w3-bar-item"><img src="https://cdn.sewellstephens.com/logo.png" style="width: 100%; height: 40px;"></img></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right">
+      <a href="products" class="w3-bar-item w3-button">PRODUCTS</a>
+    </div>
 
-<p><a href="products">View our products</a></p>
-<p><a href="contact">Contact us</a></p>
-
-
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="w3_open()">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
 </div>
+
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="w3_open()">
+      <i class="fas fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="about" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="products" class="w3-bar-item w3-button">PRODUCTS</a>
+  <a href="contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="https://sewellstephens.makeros.com/login" class="w3-bar-item w3-button">PORTAL</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgcolor" id="home">
+  <div class="" style="padding:48px">
+    <p> </p>
+    <p> </p>
+    <h1 class="w3-jumbo w3-center">Sewell Stephens - Software that clicks</h1><br>
+    <p class="w3-center"><img src="https://cdn.sewellstephens.com/clicks.png" style="width: 90%;"></img></p>
+    <p class="w3-center"><iframe src="https://cdn.sewellstephens.com/buttons" width="400" height="100" style="border: none;"></iframe></p>
+    </div>
+</header>
+
+
+
+<!-- Products Section -->
+<div class="w3-container" style="padding:128px 16px" id="products">
+  <h3 class="w3-center">PRODUCTS</h3>
+  <h2 class="w3-center">View our products on our products page <a href="products">here</a>.</h2>
+</div>
+
+<!-- Meet Section -->
+<div class="w3-container" style="padding:128px 16px" id="meet">
+  <h3 class="w3-center">MEET THE OWNER</h3>
+  <p class="w3-center"><img src="https://cdn.sewellstephens.com/profile-pic.jpg" width="300" height="300" style="-webkit-border-radius: 999px; -moz-border-radius: 999px; border-radius: 999px;"></img></p>
+  <p class="w3-center"><a href="about">Learn more</a> about Sewell Stephens, Single Founder and Owner</p>
+</div>
+
+<!-- Wrap up Section -->
+<div class="w3-container" style="padding:128px 16px" id="wrapup">
+<h1 class="w3-center">We build software products for you to love</h1>
+<p class="w3-center"><img src="https://cdn.sewellstephens.com/love-icon.png" style="width: 90%;"></img></p>
+</div>
+
+<span class="w3-jumbo">Want software development? <a href="contact">Contact us</a> today</span>
+
+<!-- Footer -->
+<footer class="w3-center w3-blue w3-padding-64">
+  <p>©2021 Sewell Stephens 104</p>
+<p> </p>
+  <p>Find us on:</p>
+  <a href="https://twitter.com/sewell_stephens">Twitter</a>
+  <a href="https://youtube.com/sewellstephens">YouTube</a>
+  <a href="https://facebook.com/sewellstephens104104">Facebook</a>
+  <a href="https://instagram.com/sewell_stephens_software">Instagram</a>
+  <a href="https://linkedin.com/in/sewellstephens104">LinkedIn</a>
+  <a href="https://behance.net/sewellstephens">Behance</a>
+  <a href="https://dribbble.com/sewell_stephens">Dribbble</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
 </body>
 </html>
