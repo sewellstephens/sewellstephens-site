@@ -45,20 +45,13 @@ body, html {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  flex: 25%;
+  flex-direction: row;
 }
-@media (max-width: 800px) {
-  .productdiv {
-    flex: 50%;
-  }
-@media (max-width: 500px) {
-  .productdiv {
-    flex: 75%;
-  }
 @media (max-width: 300px) {
   .productdiv {
-    flex: 100%;
+    flex-direction: column;
   }
+}
 .caption {
   display: flex;
   align-items: center;
