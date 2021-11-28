@@ -38,13 +38,6 @@ body, html {
   display: flex;
   flex-direction:column;
   width:20%;
-  flex: 20%;
-}
-
-@media (max-width: 500px) {
-  .a-col {
-    flex: 100%;
-  }
 }
 
 .productdiv {
@@ -54,6 +47,12 @@ body, html {
   align-items: center;
   width: 100%;
   flex-direction: row;
+}
+
+@media (max-width: 500px) {
+  .productdiv {
+    flex-direction: column;
+  }
 }
 
 .caption {
