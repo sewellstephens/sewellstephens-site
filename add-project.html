@@ -1,0 +1,81 @@
+<head>
+<script>
+  var o_options = {
+    domain: 'sewellstephens.outseta.com'
+  };
+</script>
+<script src="https://cdn.outseta.com/outseta.min.js"
+        data-options="o_options">
+</script>
+</head>
+<body>
+<style>
+  body {
+    font-family: arial;
+  }
+.button-regular {
+  letter-spacing: 1px;
+  width: 140px;
+  height: 45px;
+  font-size: 11px;
+  padding: 15px;
+  color: white;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 7px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  }
+
+.button-regular:hover {
+  background-color: #38bdff;
+  color: #fff;
+}
+.button-regular:focus {
+  background-color: #38bdff;
+  color: #fff;
+}
+.txtnav {
+text-decoration: none;
+transition: all 0.5s;
+color: black;
+opacity: 1;
+font-size: 18px;
+}
+.txtnav:hover {
+text-decoration: none;
+transition: all 0.5s;
+color: black;
+opacity: 0.5;
+font-size: 18px;
+}
+.input-regular {
+letter-spacing: 2.5px;
+  font-weight: 500;
+  width: 350px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  padding: 15px;
+  color: black;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 7px;
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+   </style> 
+  
+  <p style="text-align: center;"><img src="https://cdn.sewellstephens.com/logo.png" width="200"></img></p>
+<h1 style="text-align: center;">Add a new project request</h1>
+<form method="POST" action="https://api.sheetmonkey.io/form/q9Jtf4SvSgUkfRgwgyeXyC" style="margin: 10px;">
+<input type="text" placeholder="Name" name="name" id="name" class="input-regular" />
+<input type="email" placeholder="Email (we will send invoice to)" name="email" id="email" class="input-regular" />
+<input type="text" placeholder="Company name" name="company name" id="cname" class="input-regular" />
+<input type="url" placeholder="Website url" name="url" id="url" class="input-regular" />
+<textarea placeholder="Details" name="details" id="details" class="input-regular" />
+<button type="submit" class="button-regular" name="submit">Submit</button</a>
+  </form>
+
+</body>
