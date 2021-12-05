@@ -50,9 +50,42 @@ color: black;
 opacity: 0.5;
 font-size: 18px;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
    </style> 
   
-  <p style="text-align: center;"><img src="https://cdn.sewellstephens.com/logo.png" width="200"></img></p>
+  <ul>
+  <li><a href="account"><img src="https://cdn.sewellstephens.com/logo.png" width="100"></img></a></li>
+  <li><a href="add-project">New project</a></li>
+  <li style="float:right"><a class="active" href="/#o-logout-link">Logout</a></li>
+</ul>
+  
+  <p style="text-align: center;"></p>
 <h1 style="text-align: center;">Add a new project request</h1>
 <p style="text-align: center;"><a href="add-project"><button class="button-regular">New request</button</a></p>
 
