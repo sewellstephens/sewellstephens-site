@@ -81,10 +81,10 @@ body, html {
 
 <script>
 function Btnst() {
-	if (document.getElementsByTagName("input") === "") {
+	if (document.getElementsByClassName("input") === "") {
 	   document.getElementById('errormsg').style.display === 'block';
 	   document.getElementById('submitID').disabled = false;
-           document.getElementsByTagName("input").style.borderColor = "red";
+           document.getElementsByClassName("input").style.borderColor = "red";
 	}
 	else {
 	   document.getElementById('errormsg').style.display === 'none';
