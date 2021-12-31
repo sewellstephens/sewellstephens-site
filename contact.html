@@ -80,13 +80,13 @@ body, html {
 
 
 <script>
-	function Btnst() {
 	if (document.getElementsByTagName("input") === "") {
 	   document.getElementById('errormsg').style.display === 'block';
+	   document.getElementById('submitID').disabled = false;
 	}
 	else {
 	   document.getElementById('errormsg').style.display === 'none';
-	}
+           document.getElementById('submitID').disabled = true;
 	}
 </script>
 	  
@@ -121,7 +121,7 @@ body, html {
       <p></select></p>
       <p><textarea id="input6" class="input" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; padding: 10px; width: 100%;" type="text" placeholder="Message" name="Message"></textarea></p>
       <p>
-        <button class="w3-button w3-hover-blue w3-hover-opacity w3-blue" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; transition: all 0.5s;" type="submit" onclick="Btnst()">Submit</button>
+        <button id="button" class="w3-button w3-hover-blue w3-hover-opacity w3-blue" style="-webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; outline: none; transition: all 0.5s;" type="submit" onclick="Btnst()">Submit</button>
       </p>
       <p class="w3-center" style="display: none; color: red;" id="errormsg">Data was unsuccessfully submitted</p>
 	</form>
